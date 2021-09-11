@@ -6,7 +6,7 @@ env:
 on:
   schedule:
   # pull from upstream every day at midnight
-    - cron: "0 0 * * *"
+    - cron: "* */12 * * *"
   workflow_dispatch:
 jobs:
   sync-fork:
