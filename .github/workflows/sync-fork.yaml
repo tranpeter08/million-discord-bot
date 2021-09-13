@@ -25,6 +25,6 @@ jobs:
         run: git config --local user.name "tranpeter08"
 
       - name: Pull upstream
-        run: git pull --force --allow-unrelated-histories upstream ${{env.TARGET_BRANCH}} 
+        run: git pull --allow-unrelated-histories upstream ${{env.TARGET_BRANCH}} 
       - name: Push changes 
         run: git push 
